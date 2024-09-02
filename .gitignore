@@ -2,4 +2,3 @@
 api/.idea/
 node_modules/
 gulpfile.js
-api/application/config/database.php
