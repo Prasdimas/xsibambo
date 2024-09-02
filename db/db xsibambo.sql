@@ -1960,7 +1960,7 @@ CREATE TABLE `s_menu` (
 INSERT INTO `s_menu` (`S_MenuID`, `S_MenuCode`, `S_MenuName`, `S_MenuUrl`, `S_MenuLeft`, `S_MenuRight`, `S_MenuLevel`, `S_MenuIcon`, `S_MenuIsActive`, `S_MenuCreated`, `S_MenuLastUpdated`) VALUES
 (1,	NULL,	'Dashboard',	'/dashboard/d',	1,	2,	1,	'mdi-monitor-dashboard',	'Y',	'2023-06-19 22:20:54',	'2023-06-28 09:32:48'),
 (2,	NULL,	'Masterdata',	'#',	21,	40,	1,	'mdi-application',	'Y',	'2023-06-19 22:21:33',	'2024-03-23 23:22:35'),
-(4,	NULL,	'Jabatan',	'/master/position',	22,	23,	2,	NULL,	'Y',	'2023-06-19 22:22:03',	'2024-05-28 22:58:41'),
+(4,	NULL,	'Position',	'/master/position',	22,	23,	2,	NULL,	'Y',	'2023-06-19 22:22:03',	'2024-05-28 22:58:41'),
 (19,	NULL,	'Project',	'#',	81,	100,	1,	'mdi-projector-screen',	'N',	'2023-06-19 22:21:33',	'2024-09-02 09:35:38'),
 (20,	NULL,	'Project',	'/project/main',	82,	83,	2,	NULL,	'N',	'2023-06-19 22:22:03',	'2024-09-02 09:35:38'),
 (21,	NULL,	'Customer',	'/master/customer',	26,	27,	2,	NULL,	'N',	'2023-06-19 22:22:03',	'2024-09-02 09:35:38'),
