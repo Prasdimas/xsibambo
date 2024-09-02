@@ -1,0 +1,269 @@
+.display-h-1 {
+    font-size: 5rem!important;
+    line-height: 1.2
+}
+
+.display-h-2 {
+    font-size: 4.5rem!important;
+    line-height: 1.2
+}
+
+.display-h-3 {
+    font-size: 4rem!important;
+    line-height: 1.2
+}
+
+.display-h-4 {
+    font-size: 3.5rem!important;
+    line-height: 1.2
+}
+
+.h1,.h2,.h3,h1,h2,h3 {
+    font-family: Roboto Slab,sans-serif
+}
+
+.text-lg {
+    font-size: 1.125rem!important
+}
+
+.text-md {
+    font-size: 1rem!important
+}
+
+.text-sm {
+    font-size: .875rem!important;
+    line-height: 1.5
+}
+
+.text-xs {
+    font-size: .75rem!important
+}
+
+.text-xxs {
+    font-size: .65rem!important
+}
+
+.heading {
+    font-size: .95rem;
+    letter-spacing: .025em
+}
+
+.heading-title {
+    font-size: 1.375rem;
+    letter-spacing: .025em
+}
+
+.lead {
+    font-size: 1.25rem;
+    line-height: 2
+}
+
+p {
+    line-height: 1.6
+}
+
+.blockquote-footer {
+    color: #6c757d
+}
+
+.blockquote-footer:before {
+    content: "— "
+}
+
+.description {
+    color: #adb5bd
+}
+
+.v-application .text-left {
+    text-align: left!important
+}
+
+.v-application .text-right {
+    text-align: right!important
+}
+
+.v-application .text-center {
+    text-align: center!important
+}
+
+.v-application .text-justify {
+    text-align: justify!important
+}
+
+.v-application .text-start {
+    text-align: start!important
+}
+
+.v-application .text-end {
+    text-align: end!important
+}
+
+.v-application .text-decoration-line-through {
+    text-decoration: line-through!important
+}
+
+.v-application .text-decoration-none {
+    text-decoration: none!important
+}
+
+.v-application .text-decoration-overline {
+    text-decoration: overline!important
+}
+
+.v-application .text-decoration-underline {
+    text-decoration: underline!important
+}
+
+.v-application .text-wrap {
+    white-space: normal!important
+}
+
+.v-application .text-no-wrap {
+    white-space: nowrap!important
+}
+
+.v-application .text-pre {
+    white-space: pre!important
+}
+
+.v-application .text-pre-line {
+    white-space: pre-line!important
+}
+
+.v-application .text-pre-wrap {
+    white-space: pre-wrap!important
+}
+
+.v-application .text-break {
+    overflow-wrap: break-word!important;
+    word-break: break-word!important
+}
+
+.v-application .text-truncate {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important
+}
+
+.v-application .text-none {
+    text-transform: none!important
+}
+
+.v-application .text-capitalize {
+    text-transform: capitalize!important
+}
+
+.v-application .text-lowercase {
+    text-transform: lowercase!important
+}
+
+.v-application .text-uppercase {
+    text-transform: uppercase!important
+}
+
+.v-application .text-h1 {
+    font-size: 3rem!important
+}
+
+.v-application .text-h1,.v-application .text-h2 {
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: normal!important;
+    font-family: Roboto Slab!important
+}
+
+.v-application .text-h2 {
+    font-size: 2.25rem!important
+}
+
+.v-application .text-h3 {
+    font-size: 1.875rem!important;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal!important;
+    font-family: Roboto Slab!important
+}
+
+.v-application .text-h4 {
+    font-size: 1.5rem!important
+}
+
+.v-application .text-h4,.v-application .text-h5 {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-h5 {
+    font-size: 1.25rem!important
+}
+
+.v-application .text-h6 {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: normal!important
+}
+
+.v-application .text-h6,.v-application .text-subtitle-1 {
+    font-size: 1rem!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-subtitle-1 {
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: .009375em!important
+}
+
+.v-application .text-subtitle-2 {
+    font-size: .875rem!important;
+    font-weight: 500;
+    line-height: 1.375rem;
+    letter-spacing: .0071428571em!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-body-1 {
+    font-size: 1rem!important;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .03125em!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-body-2 {
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: .0178571429em!important
+}
+
+.v-application .text-body-2,.v-application .text-button {
+    font-size: .875rem!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-button {
+    font-weight: 500;
+    line-height: 2.25rem;
+    letter-spacing: .0892857143em!important;
+    text-transform: uppercase!important
+}
+
+.v-application .text-caption {
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: .0333333333em!important
+}
+
+.v-application .text-caption,.v-application .text-overline {
+    font-size: .75rem!important;
+    font-family: Roboto,sans-serif!important
+}
+
+.v-application .text-overline {
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: .1666666667em!important;
+    text-transform: uppercase!important
+}

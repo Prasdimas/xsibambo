@@ -1,0 +1,6 @@
+.idea/
+api/.idea/
+node_modules/
+gulpfile.js
+*.json
+api/application/config/database.php

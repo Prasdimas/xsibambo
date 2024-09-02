@@ -1,0 +1,7 @@
+
+POST http://localhost/sibambo/api/systm/menu/search_group
+Content-Type: application/json
+
+{
+    "group_id": "1.eyJ1c2VyX2lkI…M2In0.UWdb3vnUnb1kZajktV7-5ypcsiAD5zNo6PUQHPUbjR8"
+}

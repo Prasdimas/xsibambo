@@ -1,0 +1,20 @@
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase Host xsibambo\.onecode\.id$ ENVIRONTMENT=production
+    SetEnvIfNoCase Host infinite\.xsibambo\.id$ ENVIRONTMENT=production
+    SetEnvIfNoCase Host localhost$ ENVIRONTMENT=development
+</IfModule>
+
+<IfModule !mod_setenvif.c>
+    SetEnv ENVIRONTMENT=development
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond $1 !^(index\.php|assets|uploads|misc|ximages|licensex|user_guide|robots\.txt)
+    RewriteCond %{ENV:ENVIRONTMENT} development
+    RewriteRule ^(.*)$ /xsibambo/api/index.php/$1 [L]
+
+    RewriteCond $1 !^(index\.php|assets|uploads|misc|ximages|licensex|user_guide|robots\.txt)
+    RewriteCond %{ENV:ENVIRONTMENT} production
+    RewriteRule ^(.*)$ /api/index.php/$1 [L]
+</IfModule>

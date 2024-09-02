@@ -1,0 +1,25 @@
+{
+  "hdata": {
+    "employee_name": "John Doe",
+    "employee_address": "123 Main Street",
+    "employee_dob": "1990-01-01",
+    "employee_join": "2020-01-01",
+    "employee_city": 1,
+    "employee_pos": 1,
+    "employee_division": 1,
+    "employee_note": "Lorem ipsum dolor sit amet",
+    "employee_contacts": [
+      {
+        "contact_name": "Jane Smith",
+        "contact_note": "Friend"
+      },
+      {
+        "contact_name": "Bob Johnson",
+        "contact_note": "Colleague"
+      }
+    ],
+    "user_name": "johndoe",
+    "user_password": "password123",
+    "user_change": "Y"
+  }
+}

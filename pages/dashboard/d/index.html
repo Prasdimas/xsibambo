@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js with Vuex and Vuetify</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="../../../assets/css/style.css">
+        <link rel="stylesheet" href="../../../assets/css/dashboard.css">
+        <link rel="stylesheet" href="../../../material.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3"></script>
+
+
+        
+      
+        <link href="https://assets-global.website-files.com/63d0f93b8842ec945ab130c6/651a89a898eca9a6ff71af1f_sm-ico-sbm.png" rel="shortcut icon" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuex@3.6.2/dist/vuex.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-router@3.6.2/dist/vue-router.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+            integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3"></script>
+          
+    </head>
+    <body>
+        <div id="app">
+            <v-app :dark="true">
+                <toolbar :breadcrumb="['Dashboard', 'User']"></toolbar>
+                <navbar></navbar>
+                <v-main>
+                    <v-container fluid>
+                        <v-row>
+                            <dashboard></dashboard>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+                </v-main>
+            </v-app>
+        </div>
+    </body>
+    <style scoped>
+        .v-list-item {
+            min-height: 20px;
+        }
+    </style>
+    <script type="module">
+  const BASE_URL = "../../../"
+  const t = "?t="+Math.random()
+
+  import { store } from "./store.js?t=12345"
+  import customTheme from '../../../assets/js/vuetify.theme.js';
+
+  new Vue({ 
+    el: '#app', 
+    store, 
+    vuetify: new Vuetify({ theme: customTheme }),
+
+    components: {
+      navbar: httpVueLoader(BASE_URL + 'components/_navbar2.vue'+t),
+      dashboard: httpVueLoader(BASE_URL + 'components/dashboard/dashboard.vue'+t),
+
+      toolbar: httpVueLoader(BASE_URL + 'components/_toolbar.vue')
+    },
+
+    data() {
+        return {
+            APP_NAME: this.$store.state.APP_NAME
+        }
+    },
+
+    computed: {
+      __s () { return this.$store.state.masterDashboard },
+
+      dialog : {
+          get () { return this.__s.dialog },
+          set (v) { this.__c("dialog", v) }
+      },
+    }, 
+          
+    methods: { 
+        
+    },
+
+    mounted () {
+      this.$store.dispatch("masterDashboard/search")
+      this.$store.dispatch("project/search")
+
+      document.title = this.$store.state.APP_NAME
+    }
+  })
+  //.$mount('#app');
+    </script>
+</html>
